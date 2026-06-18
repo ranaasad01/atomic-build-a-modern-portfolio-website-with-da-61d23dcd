@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -172,6 +172,7 @@ export default function Navbar() {
                     setMobileOpen(false);
                   }}
                   className="block px-4 py-3 rounded-lg text-sm font-medium text-center bg-indigo-600 hover:bg-indigo-500 text-white transition-colors"
+                  style={{ fontFamily: "ui-sans-serif", fontSize: "22px" }}
                 >
                   Hire Me
                 </a>
