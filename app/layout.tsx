@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} scroll-smooth`}>
+    <html lang="en" className={`${inter.variable} scroll-smooth`} style={{ color: "#f41515" }}>
       <body className="bg-[#0f0f0f] text-white font-sans antialiased selection:bg-indigo-500/30 selection:text-indigo-200">
         <Navbar />
         <main>{children}</main>
