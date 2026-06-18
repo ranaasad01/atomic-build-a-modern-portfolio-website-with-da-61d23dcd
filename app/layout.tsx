@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SiteAssistant from "@/components/SiteAssistant"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
   description:
     "Personal portfolio of Alex Morgan — crafting elegant digital experiences with modern web technologies.",
   keywords: ["portfolio", "developer", "designer", "full-stack", "Next.js", "React"],
-  authors: [{ name: "Alex Morgan" }],
+  authors: [{ name: "Alex" }],
   openGraph: {
     title: "Alex Morgan — Full-Stack Developer & Designer",
     description:
@@ -35,7 +36,8 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
-      </body>
+            <SiteAssistant />
+    </body>
     </html>
   );
 }
